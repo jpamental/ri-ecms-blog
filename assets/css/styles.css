@@ -16,20 +16,19 @@
 /* Colors */
 :root {
   --color-paper-light: #fafafd;
-  --color-dark-gray: #333333;
   --color-light-gray: #f0f0f0;
-  --color-blue: #14218c;
+  --color-blue: #003a67;
   --color-purple: #5407a2;
-  --color-red: #ff4444;
+  --color-red: #eb5052;
   --color-background: var(--color-paper-light);
   --color-background-accent: var(--color-light-gray);
-  --color-text: var(--color-dark-gray);
-  --color-a-link: #14218c;
+  --color-text: var(--color-quahog);
+  --color-a-link: #003a67;
   --color-a-visited: #5407a2;
-  --color-a-hover: #ff4444;
-  --color-a-focus: #ff4444;
-  --color-a-active: #ff4444;
-  --color-text-accent: #594747; }
+  --color-a-hover: #eb5052;
+  --color-a-focus: #eb5052;
+  --color-a-active: #eb5052;
+  --color-text-accent: #003a67; }
 
 /* Fonts */
 /* No web fonts specified for Sans */
@@ -366,8 +365,8 @@ table {
 h1 {
   /* force the optical size axis in the variable font for finer details */
   --text-opsz: var(--h1-opsz-l);
-  color: #333333;
-  color: var(--color-text);
+  color: #003a67;
+  color: var(--color-text-accent);
   font-family: "Literata", Georgia, "Times New Roman", Times, serif;
   font-family: var(--fonts-serif-static);
   font-size: 2.25rem;
@@ -427,7 +426,7 @@ h1 + * {
 
 h2 {
   --text-opsz: var(--h2-opsz-s);
-  color: #333333;
+  color: #3f3f3f;
   color: var(--color-text);
   font-family: "Literata", Georgia, "Times New Roman", Times, serif;
   font-family: var(--fonts-serif-static);
@@ -484,7 +483,7 @@ h2 + p {
 
 h3 {
   --text-opsz: var(--h3-opsz-s);
-  color: #333333;
+  color: #3f3f3f;
   color: var(--color-text);
   font-family: "Literata", Georgia, "Times New Roman", Times, serif;
   font-family: var(--fonts-serif-static);
@@ -541,7 +540,7 @@ h3 + p {
 
 p {
   --text-opsz: var(--p-opsz-s);
-  color: #333333;
+  color: #3f3f3f;
   color: var(--color-text);
   font-size: 1rem;
   font-size: var(--p-size-s);
@@ -626,7 +625,7 @@ td {
 
 ul {
   --text-opsz: var(--p-opsz-s);
-  color: #333333;
+  color: #3f3f3f;
   color: var(--color-text);
   font-size: 1rem;
   font-size: var(--p-size-s);
@@ -659,7 +658,7 @@ ul {
       max-width: var(--content-width); } }
 
 a:link {
-  color: #14218c;
+  color: #003a67;
   color: var(--color-a-link);
   text-decoration: underline;
   text-decoration-thickness: 0.05em;
@@ -677,7 +676,7 @@ a:visited {
   transition: all .2s ease; }
 
 a:hover {
-  color: #ff4444;
+  color: #eb5052;
   color: var(--color-a-hover);
   text-decoration: underline; }
 
@@ -687,12 +686,12 @@ a:hover {
     text-decoration: unset; } }
 
 a:focus {
-  color: #ff4444;
+  color: #eb5052;
   color: var(--color-a-focus);
   text-decoration: underline; }
 
 a:active {
-  color: #ff4444;
+  color: #eb5052;
   color: var(--color-a-active);
   text-decoration: underline; }
 
@@ -703,7 +702,7 @@ a:active {
   /* Add an end mark at the end of the last paragraph */
   /* Style the initial letter */ }
   .chapter > p:first-of-type::first-line {
-    color: #594747;
+    color: #003a67;
     color: var(--color-text-accent);
     font-variant-caps: small-caps;
     font-weight: 500; }
@@ -724,7 +723,7 @@ a:active {
     line-height: 1.5;
     line-height: var(--p-lh-s); }
     .chapter hr:after {
-      color: #333333;
+      color: #3f3f3f;
       color: var(--color-text);
       content: "§"; }
     @supports (font-variation-settings: normal) {
@@ -761,7 +760,7 @@ a:active {
     mask: url(../images/svg/end_mark.svg);
     -webkit-mask-size: cover;
     mask-size: cover;
-    background-color: #594747;
+    background-color: #003a67;
     background-color: var(--color-text-accent);
     height: 0.65em;
     width: 1em;
@@ -769,7 +768,7 @@ a:active {
     line-height: 0.5; }
   .chapter > p:first-of-type::first-letter {
     --text-opsz: var(--h1-opsz-l);
-    color: #594747;
+    color: #003a67;
     color: var(--color-text-accent);
     float: left;
     font-family: "Literata", Georgia, "Times New Roman", Times, serif;

@@ -41,27 +41,41 @@ $content-width-l: 44rem;
 
 /* Colors */
 
+$color-rhody-red: #eb5052;
+$color-navy: #003a67;
+$color-ocean-state: #0c7cd5;
+$color-hope: #ffffff;
+$color-quahog: #3f3f3f;
+$color-narragansett-bay: #12768e;
+$color-seafoam: #aedee0;
+$color-golden-anchor: #fec500;
+$color-supporting-gray-1: #656565;
+$color-supporting-gray-2: #787878;
+$color-supporting-gray-3: #8b8b8b;
+$color-supporting-gray-4: #c4c4c4;
+$color-supporting-gray-5: #d7d7d7;
+$color-supporting-gray-6: #eaeaea;
+
+
 $color-paper-light: #fafafd;
-$color-dark-gray: #333333;
 $color-light-gray: #f0f0f0;
-$color-blue: #14218c;
+$color-blue: $color-navy;
 $color-purple: #5407a2;
-$color-red: #ff4444;
+$color-red: $color-rhody-red;
 $color-warm-dark-gray: #594747;
 
 $color-background: $color-paper-light;
 $color-background-accent: $color-light-gray;
-$color-text: $color-dark-gray;
-$color-a-link: $color-blue;
+$color-text: $color-quahog;
+$color-a-link: $color-navy;
 $color-a-visited: $color-purple;
-$color-a-hover: $color-red;
-$color-a-focus: $color-red;
-$color-a-active: $color-red;
-$color-text-accent: $color-warm-dark-gray;
+$color-a-hover: $color-rhody-red;
+$color-a-focus: $color-rhody-red;
+$color-a-active: $color-rhody-red;
+$color-text-accent: $color-navy;
 
 :root {
   --color-paper-light: #{$color-paper-light};
-  --color-dark-gray: #{$color-dark-gray};
   --color-light-gray: #{$color-light-gray};
   --color-blue: #{$color-blue};
   --color-purple: #{$color-purple};
@@ -69,12 +83,12 @@ $color-text-accent: $color-warm-dark-gray;
 
   --color-background: var(--color-paper-light);
   --color-background-accent: var(--color-light-gray);
-  --color-text: var(--color-dark-gray);
-  --color-a-link: #{$color-blue};
+  --color-text: var(--color-quahog);
+  --color-a-link: #{$color-navy};
   --color-a-visited: #{$color-purple};
-  --color-a-hover: #{$color-red};
-  --color-a-focus: #{$color-red};
-  --color-a-active: #{$color-red};
+  --color-a-hover: #{$color-rhody-red};
+  --color-a-focus: #{$color-rhody-red};
+  --color-a-active: #{$color-rhody-red};
   --color-text-accent: #{$color-text-accent};
 }
 

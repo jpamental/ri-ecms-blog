@@ -66,8 +66,8 @@ table {
 h1 {
   /* force the optical size axis in the variable font for finer details */
   --text-opsz: var(--h1-opsz-l);
-  color: $color-dark-gray;
-  color: var(--color-text);
+  color: $color-navy;
+  color: var(--color-text-accent);
   font-family: $fonts-serif-static;
   font-family: var(--fonts-serif-static);
   font-size: $h1-size-s;
@@ -132,7 +132,7 @@ h1 + * {
 
 h2 {
   --text-opsz: var(--h2-opsz-s);
-  color: $color-dark-gray;
+  color: $color-quahog;
   color: var(--color-text);
   font-family: $fonts-serif-static;
   font-family: var(--fonts-serif-static);
@@ -193,7 +193,7 @@ h2 + p {
 
 h3 {
   --text-opsz: var(--h3-opsz-s);
-  color: $color-dark-gray;
+  color: $color-quahog;
   color: var(--color-text);
   font-family: $fonts-serif-static;
   font-family: var(--fonts-serif-static);
@@ -254,7 +254,7 @@ h3 + p {
 
 p {
   --text-opsz: var(--p-opsz-s);
-  color: $color-dark-gray;
+  color: $color-quahog;
   color: var(--color-text);
   font-size: $p-size-s;
   font-size: var(--p-size-s);
@@ -346,7 +346,7 @@ td {
 
 ul {
   --text-opsz: var(--p-opsz-s);
-  color: $color-dark-gray;
+  color: $color-quahog;
   color: var(--color-text);
   font-size: $p-size-s;
   font-size: var(--p-size-s);
