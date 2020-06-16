@@ -435,6 +435,32 @@
   font-display: swap;
 }
 
+/* Standard Regular, Italic, Bold, Bold Italic */
+
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/literata/woff2/Literata-12ptRegular-subset.woff2') format('woff2'),
+       url('../fonts/literata/woff/Literata-12ptRegular-subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/fira-code/FiraCode-Regular.woff2') format('woff2'),
+       url('../fonts/fira-code/FiraCode-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/fira-code/FiraCode-Bold.woff2') format('woff2'),
+       url('../fonts/fira-code/FiraCode-Bold.woff') format('woff');
+}
+
 /* Literata Variable */
 @font-face {
   font-family: 'Literata Variable';
@@ -451,5 +477,35 @@
   font-weight: 200 900;
   src: url('../fonts/literata-vf/Literata-Italic-VF-subset.woff2') format('woff2 supports variations'),
        url('../fonts/literata-vf/Literata-Italic-VF-subset.woff2') format('woff2-variations');
+  font-display: swap;
+}
+
+
+/* Literata Variable */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/inter-vf/Inter-Roman-subset.woff2') format('woff2 supports variations'),
+       url('../fonts/inter-vf/Inter-Roman-subset.woff2') format('woff2-variations');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('../fonts/inter-vf/Inter-Italic-subset.woff2') format('woff2 supports variations'),
+       url('../fonts/inter-vf/Inter-Italic-subset.woff2') format('woff2-variations');
+  font-display: swap;
+}
+
+/* Fira Code Variable */
+@font-face {
+  font-family: 'Fira Code Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/fira-code-vf/FiraCode-subset.woff2') format('woff2 supports variations'),
+       url('../fonts/fira-code-vf/FiraCode-subset.woff2') format('woff2-variations');
   font-display: swap;
 }

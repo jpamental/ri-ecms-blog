@@ -1,5 +1,13 @@
-module.exports = function(eleventyConfig) {
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
+// Import transforms
+const parseTransform = require('./transforms/parse-transform.js');
+
+module.exports = function(eleventyConfig) {
+  
+  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addCollection("posts", function(collection) {
     const coll = collection.getFilteredByTag("posts");
   
@@ -13,20 +21,33 @@ module.exports = function(eleventyConfig) {
   
     return coll;
   });
+  
+  /* Markdown Overrides */
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "#"
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+  eleventyConfig.addTransform('parse', parseTransform);
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
-  
 
     
-    return {
-      dir: {
-        // ⚠️ These values are both relative to your input directory.
-        includes: "_includes",
-        layouts: "_includes/_layouts",
-        partials: "_includes/partials",
-        data: "_data",
-      }
+  return {
+    dir: {
+      // ⚠️ These values are both relative to your input directory.
+      includes: "_includes",
+      layouts: "_includes/_layouts",
+      partials: "_includes/partials",
+      data: "_data",
     }
+  }
   
 };

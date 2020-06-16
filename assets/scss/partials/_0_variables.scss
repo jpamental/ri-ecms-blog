@@ -82,24 +82,29 @@ $color-text-accent: $color-warm-dark-gray;
 $fonts-base-serif: Georgia, 'Times New Roman', Times, serif;
 $fonts-base-serif-display: 'Times New Roman', Times, serif;
 $fonts-base-sans: Helvetica, Arial, sans-serif;
+$fonts-base-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 $fonts-serif-static: "Literata", $fonts-base-serif;
 $fonts-sans-static: $fonts-base-sans; /* No web fonts specified for Sans */
+$fonts-code-static: "Fira Code", $fonts-base-code;
 
 $fonts-serif-static-caption: "Literata Caption", $fonts-base-serif;
 $fonts-serif-static-deck: "Literata Deck", $fonts-base-serif;
 $fonts-serif-static-display: "Literata Display", $fonts-base-serif;
 
 $fonts-serif: "Literata Variable", $fonts-base-serif;
-$fonts-sans: $fonts-base-sans;
+$fonts-sans: "Inter Variable", $fonts-base-sans;
+$fonts-code: "Fira Code Variable", $fonts-base-code;
 
 :root {
   --fonts-base-serif: #{$fonts-base-serif};
   --fonts-base-serif-display: #{$fonts-base-serif-display};
   --fonts-base-sans: #{$fonts-base-sans};
+  --fonts-base-code: #{$fonts-base-code};
 
   --fonts-serif-static: #{$fonts-serif-static};
   --fonts-sans-static: #{$fonts-sans-static};
+  --fonts-code-static: #{$fonts-code-static};
 
   --fonts-serif-static-caption: #{$fonts-serif-static-caption};
   --fonts-serif-static-deck: #{$fonts-serif-static-deck};
@@ -107,6 +112,7 @@ $fonts-sans: $fonts-base-sans;
 
   --fonts-serif: #{$fonts-serif};
   --fonts-sans: #{$fonts-sans};
+  --fonts-code: #{$fonts-code};
 }
 
 /* Text sizing */
@@ -280,9 +286,9 @@ $h3-lh-l: 1.2;
   --p-opsz-l: #{$p-size-l-px};
 
   /* Force optical size axis to the highest value for greatest contrast */
-  --h1-opsz-s: 72;
-  --h1-opsz-m: 72;
-  --h1-opsz-l: 72;
+  --h1-opsz-s: 8;
+  --h1-opsz-m: 8;
+  --h1-opsz-l: 8;
 
   --h2-opsz-s: 56;
   --h2-opsz-m: 60;

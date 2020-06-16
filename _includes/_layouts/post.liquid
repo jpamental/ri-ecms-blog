@@ -1,6 +1,10 @@
 {% include partials/meta_open %}
 
 <article class="post">
+  <h1>{{ title }}</h1>
+  <footer class="byline">
+    <p>posted on {{ date | date: "%d %b, %Y" }} by {{ author }}</p>
+  </footer>
   {{ content }}
 
   <nav aria-labelledby="post-pagination">

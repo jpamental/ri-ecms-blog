@@ -208,15 +208,15 @@
     &:link,
     &:visited {
       --text-opsz: 10;
-      font-family: $fonts-serif-static-caption;
-      font-family: var(--fonts-serif-static-caption);
+      font-family: $fonts-sans-static;
+      font-family: var(--fonts-sans-static);
       font-size: 0.875rem;
       text-decoration: none;
       @supports (font-variation-settings: normal) {
-        font-family: var(--fonts-serif);
+        font-family: var(--fonts-sams);
         font-variation-settings: 'opsz' var(--text-opsz);
         .wf-inactive & {
-          font-family: var(--fonts-base-serif);
+          font-family: var(--fonts-base-sans);
         }
       }
       @media screen and (min-width: $bp--large) {
@@ -430,6 +430,16 @@ article {
     margin-top: 0.25rem;
     margin-top: calc( var(--body-text-spacer) * .25 );
   }
+  > p {
+    background-color: rgba(255,255,255,0.35);
+  }
+}
+
+.byline {
+  font-style: italic;
+  & + p {
+    margin-top: calc( var(--body-text-spacer) * 1 );
+  }
 }
 
 /* Footer */
@@ -450,18 +460,17 @@ body > footer {
     &:link,
     &:visited { 
       --text-opsz: 7;
-      font-family: $fonts-serif-static-caption;
-      font-family: var(--fonts-serif-static-caption);
+      font-family: $fonts-sans-static;
+      font-family: var(--fonts-sans-static);
       font-size: 0.625rem;
       text-decoration: none;
       @media screen and (min-width: $bp--small) {
         font-size: 0.75rem;
       }
       @supports (font-variation-settings: normal) {
-        font-family: var(--fonts-serif);
-        font-variation-settings: 'opsz' var(--text-opsz);
+        font-family: var(--fonts-sans);
         .wf-inactive & {
-          font-family: var(--fonts-base-serif);
+          font-family: var(--fonts-base-sans);
           font-weight: normal;
           font-size: 0.8675rem;
         }
@@ -472,5 +481,18 @@ body > footer {
     &:active {
       text-decoration: underline;
     }
+  }
+}
+
+.quahog {
+  position: fixed;
+  top: 0;
+  left: 2.5vw;
+  opacity: 0.075;
+  width: 45vw;
+  z-index: -1;
+  img {
+    transform-origin: bottom center;
+    transform: rotate(-35deg);
   }
 }

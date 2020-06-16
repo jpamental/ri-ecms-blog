@@ -18,12 +18,17 @@
   },
   "homepage": "https://github.com/jpamental/ri-ecms-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@tbranyen/jsdom": "^13.0.0",
+    "html-minifier": "^4.0.0"
   },
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-sass-glob": "^1.1.0",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "markdown-it": "^11.0.0",
+    "markdown-it-anchor": "^5.3.0"
   }
 }
