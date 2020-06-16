@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("posts", function(collection) {
-    const coll = collection.getFilteredByTag("blog");
+    const coll = collection.getFilteredByTag("posts");
   
     for(let i = 0; i < coll.length ; i++) {
       const prevPost = coll[i-1];

@@ -19,5 +19,11 @@
   "homepage": "https://github.com/jpamental/ri-ecms-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }

@@ -1,0 +1,16 @@
+{% include partials/meta_open %}
+
+<article class="post">
+  {{ content }}
+
+  <nav aria-labelledby="post-pagination">
+    <h2 id="post-pagination" class="visually-hidden">Previous/Next Post</h2>
+    <ul class="prev-next-posts">
+      <li class="previous">{% if prevPost.url %}<a href="{{ prevPost.url }}">&laquo; {{ prevPost.data.title }}</a>{% else %}<a href="/contents">&laquo; Table of Contents</a>{% endif %}</li>
+      <li class="next">{% if nextPost.url %}<a href="{{ nextPost.url }}">{{ nextPost.data.title }} &raquo;</a>{% endif %}</li>
+    </ul>
+  </nav>
+
+</article>
+
+{% include partials/meta_close %}
