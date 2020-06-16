@@ -66,8 +66,8 @@
 .dd-menu {
   --text-opsz: 10;
   display: inline-block;
-  font-family: $fonts-serif-static-caption;
-  font-family: var(--fonts-serif-static-caption);
+  font-family: $fonts-serif-static;
+  font-family: var(--fonts-serif-static);
   position: relative;
   @supports (font-variation-settings: normal) {
     font-family: var(--fonts-serif);

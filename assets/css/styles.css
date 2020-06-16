@@ -35,17 +35,13 @@
 /* No web fonts specified for Sans */
 :root {
   --fonts-base-serif: Georgia, Times New Roman, Times, serif;
-  --fonts-base-serif-display: Times New Roman, Times, serif;
   --fonts-base-sans: Helvetica, Arial, sans-serif;
   --fonts-base-code: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   --fonts-serif-static: Literata, Georgia, Times New Roman, Times, serif;
-  --fonts-sans-static: Helvetica, Arial, sans-serif;
+  --fonts-sans-static: Work Sans, Helvetica, Arial, sans-serif;
   --fonts-code-static: Fira Code, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
-  --fonts-serif-static-caption: Literata Caption, Georgia, Times New Roman, Times, serif;
-  --fonts-serif-static-deck: Literata Deck, Georgia, Times New Roman, Times, serif;
-  --fonts-serif-static-display: Literata Display, Georgia, Times New Roman, Times, serif;
   --fonts-serif: Literata Variable, Georgia, Times New Roman, Times, serif;
-  --fonts-sans: Inter Variable, Helvetica, Arial, sans-serif;
+  --fonts-sans: Work Sans Variable, Helvetica, Arial, sans-serif;
   --fonts-code: Fira Code Variable, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace; }
 
 /* Text sizing */
@@ -227,268 +223,33 @@
   src: url("../fonts/literata/woff2/Literata-12ptExtraBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-12ptExtraBoldItalic-subset.woff") format("woff");
   font-display: swap; }
 
-/* Literata Caption optimized for 12px or less */
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-7ptRegular-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptRegular-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-7ptItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/literata/woff2/Literata-7ptMedium-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptMedium-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/literata/woff2/Literata-7ptMediumItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptMediumItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/literata/woff2/Literata-7ptSemiBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptSemiBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/literata/woff2/Literata-7ptSemiBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptSemiBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/literata/woff2/Literata-7ptBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Caption';
-  font-style: italic;
-  font-weight: bold;
-  src: url("../fonts/literata/woff2/Literata-7ptBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-7ptBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-/* Literata Deck optimized for text from 30px to 48px or so */
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/literata/woff2/Literata-36ptLight-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptLight-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: italic;
-  font-weight: 300;
-  src: url("../fonts/literata/woff2/Literata-36ptLightItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptLightItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-36ptRegular-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptRegular-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-36ptItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/literata/woff2/Literata-36ptMedium-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptMedium-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/literata/woff2/Literata-36ptMediumItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptMediumItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/literata/woff2/Literata-36ptSemiBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptSemiBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/literata/woff2/Literata-36ptSemiBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptSemiBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/literata/woff2/Literata-36ptBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: italic;
-  font-weight: bold;
-  src: url("../fonts/literata/woff2/Literata-36ptBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/literata/woff2/Literata-36ptExtraBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptExtraBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Deck';
-  font-style: italic;
-  font-weight: 800;
-  src: url("../fonts/literata/woff2/Literata-36ptExtraBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-36ptExtraBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-/* Literata Display optimized for text from 48px or so and up */
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/literata/woff2/Literata-72ptExtraLight-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptExtraLight-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: 200;
-  src: url("../fonts/literata/woff2/Literata-72ptExtraLightItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptExtraLightItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/literata/woff2/Literata-72ptLight-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptLight-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: 300;
-  src: url("../fonts/literata/woff2/Literata-72ptLightItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptLightItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-72ptRegular-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptRegular-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-72ptItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/literata/woff2/Literata-72ptMedium-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptMedium-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/literata/woff2/Literata-72ptMediumItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptMediumItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/literata/woff2/Literata-72ptSemiBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptSemiBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/literata/woff2/Literata-72ptSemiBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptSemiBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/literata/woff2/Literata-72ptBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: bold;
-  src: url("../fonts/literata/woff2/Literata-72ptBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/literata/woff2/Literata-72ptExtraBold-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptExtraBold-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: 800;
-  src: url("../fonts/literata/woff2/Literata-72ptExtraBoldItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptExtraBoldItalic-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/literata/woff2/Literata-72ptBlack-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptBlack-subset.woff") format("woff");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Literata Display';
-  font-style: italic;
-  font-weight: 900;
-  src: url("../fonts/literata/woff2/Literata-72ptBlackItalic-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-72ptBlackItalic-subset.woff") format("woff");
-  font-display: swap; }
-
+/* Work Sans Static Fonts */
 /* Standard Regular, Italic, Bold, Bold Italic */
 @font-face {
-  font-family: 'Literata';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/literata/woff2/Literata-12ptRegular-subset.woff2") format("woff2"), url("../fonts/literata/woff/Literata-12ptRegular-subset.woff") format("woff"); }
+  src: url("../fonts/work-sans/WorkSans-Regular.woff2") format("woff2"), url("../fonts/work-sans/WorkSans-Regular.woff") format("woff"); }
 
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/work-sans/WorkSans-Italic.woff2") format("woff2"), url("../fonts/work-sans/WorkSans-Italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/work-sans/WorkSans-Bold.woff2") format("woff2"), url("../fonts/work-sans/WorkSans-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/work-sans/WorkSans-BoldItalic.woff2") format("woff2"), url("../fonts/work-sans/WorkSans-BoldItalic.woff") format("woff"); }
+
+/* Fira Regular, Bold */
 @font-face {
   font-family: 'Fira Code';
   font-style: normal;
@@ -518,17 +279,17 @@
 
 /* Literata Variable */
 @font-face {
-  font-family: 'Inter Variable';
+  font-family: 'Work Sans Variable';
   font-style: normal;
   font-weight: 100 900;
-  src: url("../fonts/inter-vf/Inter-Roman-subset.woff2") format("woff2 supports variations"), url("../fonts/inter-vf/Inter-Roman-subset.woff2") format("woff2-variations");
+  src: url("../fonts/work-sans-vf/WorkSans-Roman-subset.woff2") format("woff2 supports variations"), url("../fonts/work-sans-vf/WorkSans-Roman-subset.woff2") format("woff2-variations");
   font-display: swap; }
 
 @font-face {
-  font-family: 'Inter Variable';
+  font-family: 'Work Sans Variable';
   font-style: italic;
   font-weight: 100 900;
-  src: url("../fonts/inter-vf/Inter-Italic-subset.woff2") format("woff2 supports variations"), url("../fonts/inter-vf/Inter-Italic-subset.woff2") format("woff2-variations");
+  src: url("../fonts/work-sans-vf/WorkSans-Italic-subset.woff2") format("woff2 supports variations"), url("../fonts/work-sans-vf/WorkSans-Italic-subset.woff2") format("woff2-variations");
   font-display: swap; }
 
 /* Fira Code Variable */
@@ -578,7 +339,7 @@ html {
 body {
   --text-opsz: var(--p-opsz-s);
   background-color: var(--color-background);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-family: var(--fonts-sans-static);
   font-size: 1rem;
   line-height: 1.5;
@@ -607,8 +368,8 @@ h1 {
   --text-opsz: var(--h1-opsz-l);
   color: #333333;
   color: var(--color-text);
-  font-family: "Literata Display", Georgia, "Times New Roman", Times, serif;
-  font-family: var(--fonts-serif-static-display);
+  font-family: "Literata", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--fonts-serif-static);
   font-size: 2.25rem;
   font-size: var(--h1-size-s);
   font-variant-ligatures: common-ligatures;
@@ -628,7 +389,7 @@ h1 {
       font-variation-settings: "opsz" var(--text-opsz);
       font-weight: 850; }
       .wf-inactive h1 {
-        font-family: var(--fonts-base-serif-display);
+        font-family: var(--fonts-base-serif);
         font-weight: normal;
         letter-spacing: 0.015em; } }
   @media screen and (min-width: 42em) {
@@ -668,8 +429,8 @@ h2 {
   --text-opsz: var(--h2-opsz-s);
   color: #333333;
   color: var(--color-text);
-  font-family: "Literata Deck", Georgia, "Times New Roman", Times, serif;
-  font-family: var(--fonts-serif-static-deck);
+  font-family: "Literata", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--fonts-serif-static);
   font-size: 1.5rem;
   font-size: var(--h2-size-s);
   font-weight: 300;
@@ -686,7 +447,7 @@ h2 {
       font-variation-settings: "opsz" var(--text-opsz);
       font-weight: 325; }
       .wf-inactive h2 {
-        font-family: var(--fonts-base-serif-display);
+        font-family: var(--fonts-base-serif);
         font-weight: normal; } }
   @media screen and (min-width: 42em) {
     h2 {
@@ -1011,8 +772,8 @@ a:active {
     color: #594747;
     color: var(--color-text-accent);
     float: left;
-    font-family: "Literata Display", Georgia, "Times New Roman", Times, serif;
-    font-family: var(--fonts-serif-static-display);
+    font-family: "Literata", Georgia, "Times New Roman", Times, serif;
+    font-family: var(--fonts-serif-static);
     font-weight: normal;
     font-size: 3.125em;
     /* tweak vertical positioning in Chrome & Safari */
@@ -1165,8 +926,8 @@ article {
 .dd-menu {
   --text-opsz: 10;
   display: inline-block;
-  font-family: "Literata Caption", Georgia, "Times New Roman", Times, serif;
-  font-family: var(--fonts-serif-static-caption);
+  font-family: "Literata", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--fonts-serif-static);
   position: relative; }
   @supports (font-variation-settings: normal) {
     .dd-menu {
@@ -1265,7 +1026,7 @@ article {
     text-align: right; }
   .prev-next-posts a:link, .prev-next-posts a:visited {
     --text-opsz: 10;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Work Sans", Helvetica, Arial, sans-serif;
     font-family: var(--fonts-sans-static);
     font-size: 0.875rem;
     text-decoration: none; }
@@ -1461,7 +1222,7 @@ body > footer {
       padding: 0.5rem 2vw 1rem var(--margin-left); } }
   body > footer a:link, body > footer a:visited {
     --text-opsz: 7;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Work Sans", Helvetica, Arial, sans-serif;
     font-family: var(--fonts-sans-static);
     font-size: 0.625rem;
     text-decoration: none; }

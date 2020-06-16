@@ -51,8 +51,20 @@
 							weight: 400,
 							style: 'italic'
 						});
+					var fontC = new FontFaceObserver('Work Sans Variable', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontD = new FontFaceObserver('Work Sans Variable', {
+							weight: 400,
+							style: 'italic'
+						});
+					var fontE = new FontFaceObserver('Fira Code Variable', {
+							weight: 400,
+							style: 'normal'
+						});
 			
-					Promise.all([fontA.load(), fontB.load()]).then(function () {
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load()]).then(function () {
             document.documentElement.classList.remove("wf-inactive");
             document.documentElement.classList.add("wf-active");
           
@@ -88,28 +100,32 @@
 							weight: '600',
 							style: 'normal'
 						});
-					var fontH = new FontFaceObserver('Literata Caption', {
+					var fontH = new FontFaceObserver('Work Sans', {
 							weight: 'normal',
 							style: 'normal'
 						});
-					var fontI = new FontFaceObserver('Literata Deck', {
-							weight: '300',
+					var fontI = new FontFaceObserver('Work Sans', {
+							weight: 'bold',
 							style: 'normal'
 						});
-					var fontJ = new FontFaceObserver('Literata Display', {
-							weight: '300',
-							style: 'normal'
+					var fontJ = new FontFaceObserver('Work Sans', {
+							weight: 'normal',
+							style: 'italic'
 						});
-					var fontK = new FontFaceObserver('Literata Display', {
+					var fontK = new FontFaceObserver('Work Sans', {
+							weight: 'bold',
+							style: 'italic'
+						});
+					var fontL = new FontFaceObserver('Fira Code', {
 							weight: 'normal',
 							style: 'normal'
 						});
-					var fontL = new FontFaceObserver('Literata Display', {
-							weight: '900',
+					var fontM = new FontFaceObserver('Fira Code', {
+							weight: 'bold',
 							style: 'normal'
 						});
 
-					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load(), fontJ.load(), fontK.load(), fontL.load()]).then(function () {
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load(), fontJ.load(), fontK.load(), fontL.load(), fontM.load()]).then(function () {
             document.documentElement.classList.remove("wf-inactive");
             document.documentElement.classList.add("wf-active");
           

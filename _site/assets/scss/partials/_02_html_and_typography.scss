@@ -68,8 +68,8 @@ h1 {
   --text-opsz: var(--h1-opsz-l);
   color: $color-dark-gray;
   color: var(--color-text);
-  font-family: $fonts-serif-static-display;
-  font-family: var(--fonts-serif-static-display);
+  font-family: $fonts-serif-static;
+  font-family: var(--fonts-serif-static);
   font-size: $h1-size-s;
   font-size: var(--h1-size-s);
   font-variant-ligatures: common-ligatures;
@@ -88,7 +88,7 @@ h1 {
     font-variation-settings: 'opsz' var(--text-opsz);
     font-weight: 850;
     .wf-inactive & {
-      font-family: var(--fonts-base-serif-display);
+      font-family: var(--fonts-base-serif);
       font-weight: normal;
       letter-spacing: 0.015em;
     }
@@ -134,8 +134,8 @@ h2 {
   --text-opsz: var(--h2-opsz-s);
   color: $color-dark-gray;
   color: var(--color-text);
-  font-family: $fonts-serif-static-deck;
-  font-family: var(--fonts-serif-static-deck);
+  font-family: $fonts-serif-static;
+  font-family: var(--fonts-serif-static);
   font-size: $h2-size-s;
   font-size: var(--h2-size-s);
   font-weight: 300;
@@ -151,7 +151,7 @@ h2 {
     font-variation-settings: 'opsz' var(--text-opsz);
     font-weight: 325;
     .wf-inactive & {
-      font-family: var(--fonts-base-serif-display);
+      font-family: var(--fonts-base-serif);
       font-weight: normal;
     }
   }
@@ -511,8 +511,8 @@ a {
     color: $color-text-accent;
     color: var(--color-text-accent);
     float: left;
-    font-family: $fonts-serif-static-display;
-    font-family: var(--fonts-serif-static-display);
+    font-family: $fonts-serif-static;
+    font-family: var(--fonts-serif-static);
     font-weight: normal;
     font-size: 3.125em;
     /* tweak vertical positioning in Chrome & Safari */
