@@ -294,9 +294,9 @@ $h3-lh-l: 1.2;
   --h1-opsz-m: 8;
   --h1-opsz-l: 8;
 
-  --h2-opsz-s: 56;
-  --h2-opsz-m: 60;
-  --h2-opsz-l: 64;
+  --h2-opsz-s: #{$h2-size-s-px};
+  --h2-opsz-m: #{$h2-size-m-px};
+  --h2-opsz-l: #{$h2-size-l-px};
 
   --h3-opsz-s: #{$h3-size-s-px};
   --h3-opsz-m: #{$h3-size-m-px};

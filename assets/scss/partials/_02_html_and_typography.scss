@@ -267,7 +267,7 @@ p {
   max-width: var(--content-width);
   @supports (font-variation-settings: normal) {
     font-variation-settings: 'opsz' var(--text-opsz);
-    font-weight: 385;
+    font-weight: 400;
     .wf-inactive & {
       font-family: var(--fonts-base-serif);
       font-weight: normal;

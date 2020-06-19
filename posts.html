@@ -2,24 +2,18 @@
 layout: page.liquid
 pagination:
   data: collections.posts
-  size: 4
+  size: 99
   reverse: true
 ---
 
 <article class="title-page">
   <h1 class="publication-title">
-    {{ metadata.title }}
+    Posts by date
   </h1>
-  <h2>
-    {{ metadata.description }}
-  </h2>
 
-
-<h2>Latest Posts</h2>
 {% include partials/postlist with 
   posts: pagination.items
 %}
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
 
 

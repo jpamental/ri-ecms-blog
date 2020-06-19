@@ -1,6 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
 
 // Import transforms
 const parseTransform = require('./transforms/parse-transform.js');
@@ -21,16 +20,13 @@ module.exports = function(eleventyConfig) {
   
     return coll;
   });
-  
+
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    linkify: true,
+    typographer: true
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
@@ -39,7 +35,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
 
-    
   return {
     dir: {
       // ⚠️ These values are both relative to your input directory.
@@ -51,3 +46,4 @@ module.exports = function(eleventyConfig) {
   }
   
 };
+

@@ -119,9 +119,9 @@
   --h1-opsz-s: 8;
   --h1-opsz-m: 8;
   --h1-opsz-l: 8;
-  --h2-opsz-s: 56;
-  --h2-opsz-m: 60;
-  --h2-opsz-l: 64;
+  --h2-opsz-s: 24;
+  --h2-opsz-m: 30;
+  --h2-opsz-l: 36;
   --h3-opsz-s: 20;
   --h3-opsz-m: 22;
   --h3-opsz-l: 24; }
@@ -554,7 +554,7 @@ p {
   @supports (font-variation-settings: normal) {
     p {
       font-variation-settings: "opsz" var(--text-opsz);
-      font-weight: 385; }
+      font-weight: 400; }
       .wf-inactive p {
         font-family: var(--fonts-base-serif);
         font-weight: normal;
@@ -1248,6 +1248,12 @@ body > footer {
   .quahog img {
     transform-origin: bottom center;
     transform: rotate(-35deg); }
+
+.posts-list {
+  display: grid; }
+  .posts-list__item > * {
+    margin-left: 0;
+    margin-right: 0; }
 
 /**
  * okaidia theme for JavaScript, CSS and HTML
